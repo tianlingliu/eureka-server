@@ -1,0 +1,9 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      # 向每个注册中心注册
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka
